@@ -1,0 +1,26 @@
+.bom{
+    border: 1px dotted red;
+    text-align: center;
+}
+
+.bom p{
+    font-size:25px;
+    font-weight:bold;
+}
+.pt1{
+    margin:10px;
+}
+
+.pt2{
+    border:1px dotted red;
+    padding:20px;
+}
+
+.pt2 p{
+    font-size: 30px;
+    color:green;
+}
+.try{
+    border:1px solid red;
+    padding:10px;
+}
