@@ -2,3 +2,8 @@
   border:1px solid red;
   padding:10px;  
 }
+.con{
+  border:1px solid black;
+  text-align: center;
+  height:900px;
+}
