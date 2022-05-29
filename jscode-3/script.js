@@ -118,3 +118,102 @@
 // });
 // console.log(b);
 
+//  ---------- ==========   Map and filter array function -----==============;
+
+// map function js
+
+const number= [2,13,4,45,6,17,80];
+const minus = number.map(function(p){
+    return p-1; // This is minus function.
+});
+console.log(number);
+console.log(minus);
+
+const plus =number.map(function(y){
+    return y+2; // This is plus maping function. 
+});
+console.log(plus);
+
+const squer = number.map(function(s){
+    return s*s; //This is quer maing function.
+});
+console.log(squer);
+
+
+//  filter function js
+
+const small = number.filter(function(x){
+    return x<20;
+});
+console.log(`The filter number smaller then 20 is: ${small}`);
+
+const large=number.filter(function(x){
+    return x>10;
+});
+console.log(`the filter large than 10 is: ${large} `);
+
+
+// arrow function 
+
+// nrmalfunction
+
+function text(){console.log(`This is normal function`)}
+text();
+const text1= () =>console.log(`This is arrow function `);
+text1();
+
+function text3(){return "Hi, This is normal function "}
+console.log(text3);
+let text4 = ()=>  `Hi, This is arrow RETURN function`;
+console.log(text4);
+
+const text5=(num1, num2,num3) => num1-num2+num3;
+
+console.log(text5(10,20,30,));
+
+var student=[
+    {
+        id:101,
+        name:'Tonmoy',
+        gpa:4.13
+    },
+    {
+        id:102,
+        name:'Toma',
+        gpa:3.65
+    },
+    {
+        id:103,
+        name:'Alom',
+        gpa:2.69
+    },
+    {
+        id:104,
+        name:'Ahamim',
+        gpa:3.23
+    },
+    
+    {
+        id:105,
+        name:'Shamim',
+        gpa:3.26
+    },
+    
+    {
+        id:106,
+        name:'Anis',
+        gpa:2.60
+    }
+]
+console.log(student);
+
+function studentName(){
+    return student.filter(function(x){
+        return x.gpa>3
+    }).map(function(y){return y.name });
+}
+
+console.log(studentName());
+
+const studentName1 = () => student.filter((x)=>x.gpa<3).map((y)=>y.name);
+console.log(studentName1());
