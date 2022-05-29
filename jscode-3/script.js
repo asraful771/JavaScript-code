@@ -217,3 +217,5 @@ console.log(studentName());
 
 const studentName1 = () => student.filter((x)=>x.gpa<3).map((y)=>y.name);
 console.log(studentName1());
+// Arrow function end.
+
