@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6- callback and higher orderfunction</title>
+</head>
+<body>
+    
+    <script>
+        function square(x){
+            console.log(`${x} square is:${x*x}`);
+        }
+        
+
+
+        function higherOrder(num,tit){
+            tit(num);
+        }
+        higherOrder(9,square);
+
+
+        // --------------------------- 
+        const takeOne = (callback) =>{
+            console.log("take One")
+            callback()
+        }
+       
+        const taketwo = (callback) =>{
+            setTimeout(()=>{
+                console.log("it's a dataloding");
+                callback()
+            },2000);
+        }
+    
+        const takethree = (callback) =>{
+            console.log("take Three")
+            callback()
+        }
+   
+        const takefour = () =>{
+            console.log("take four")
+        }
+
+        takeOne(function f1(){
+            taketwo(()=>{
+                takethree(()=>{
+                    takefour();
+                });
+            });
+        });
+
+
+
+
+    </script>
+</body>
+</html>

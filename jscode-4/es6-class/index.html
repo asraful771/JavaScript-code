@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 - Class</title>
+</head>
+<body>
+
+    
+    <script>
+
+        class student{
+            constructor(id,name,gpa){
+                this.id=id;
+                this.name=name;
+                this.gpa=gpa;
+            }
+            set studentName(name){
+                this.name=name;
+
+            }
+            set studentId(id){
+                this.id=id
+            }
+            get studentInfo(){
+                return this.id + " " + this.name + " " + this.gpa;
+            }
+        }
+
+        const s1=new student(101,"Shamim",3.50)
+        console.log(s1)
+        s1.studentName="hossin"
+        console.log(s1)
+        console.log(s1.name)
+        s1.studentId=102
+        console.log(s1)
+        console.log(s1.studentInfo)
+    </script>
+</body>
+</html>

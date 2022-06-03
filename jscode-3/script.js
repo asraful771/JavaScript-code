@@ -219,3 +219,8 @@ const studentName1 = () => student.filter((x)=>x.gpa<3).map((y)=>y.name);
 console.log(studentName1());
 // Arrow function end.
 
+// Destructuring array and object
+let count=[10,20,30,40,50,60,70,80,90,];
+let [num1,num2,num3,...z]=count;
+console.log(z);
+
